@@ -1,33 +1,47 @@
-# Parking system project with C#
+# Parking Lot Project with C#  
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Version](https://img.shields.io/badge/version-0.1-blue)
+![Language](https://img.shields.io/badge/language-C%23-178600)
+![License](https://img.shields.io/badge/license-none-lightgrey)
 
-ENGLISH
+A simple and functional parking lot management system built in C#.  
+It registers vehicles, assigns parking spots, calculates fees based on parking time, and displays the availability of all spots.
 
-Smart Parking System
+---
 
-This project is a console application developed as part of the DIO C# bootcamp, designed to simulate a simple but functional parking management system. It serves as a practical demonstration of essential programming concepts, offering an intuitive way to manage vehicle flow.
+## 📘 Description
 
-Application Features:
-Vehicle Management: Park up to 15 different cars, identifying each by its name and year. The system provides real-time tracking of the parking spot occupied by each vehicle.
+**Parking Lot Project with C#** is a console-based system designed to manage vehicle entries, exits, fees, and parking spot availability.
 
-Spot Control: Keep track of available parking spaces and easily remove cars when they exit.
+The code was developed as part of my learning journey with the C# language —  
+**this was the first full project I built using C#**, serving as a hands-on way to explore object-oriented programming and .NET fundamentals.
 
-Search & Analytics: Quickly search for a specific car by name and year to find its location. The system also automatically calculates the parking fee based on the duration of the stay.
+---
 
-With a straightforward and practical interface, this project is a great example of how C# can be used to solve real-world problems.
+## 🎯 Motivation / Why This Project Exists
 
+The goal behind this project was to:
 
-PORTUGUÊS
+- Strengthen my understanding of C# fundamentals  
+- Practice object-oriented design (classes, encapsulation, responsibilities)  
+- Solve a real-world problem: organizing and controlling a parking lot  
+- Learn how to structure a console application with clean logic  
+- Explore data validation and business rules  
 
-Estacionamento Inteligente.
+It is intentionally simple, but built with clarity and good structure in mind.
 
-Este projeto, desenvolvido como parte do bootcamp de C# pela DIO, é uma aplicação de console que simula a gestão de um estacionamento. Criado para demonstrar conceitos essenciais de programação, ele permite uma administração prática e intuitiva de veículos.
+---
 
-Recursos da Aplicação:
-Adicionar e Gerenciar Veículos: Estacione até 15 carros, identificando-os pelo nome e ano, e visualize facilmente a vaga ocupada por cada um.
+## 🛠 Installation
 
-Controle de Vagas: Mantenha o controle das vagas disponíveis em tempo real e remova carros do estacionamento quando necessário.
+### Requirements
+- Windows, Linux, or macOS  
+- .NET SDK installed  
+- No external dependencies required
 
-Consulta e Análise: Busque por carros específicos por nome e ano para ver sua localização e calcule automaticamente o valor a ser pago com base no tempo de permanência.
+### Running the application
 
-Com uma interface simples e direta, este projeto serve como um exemplo prático de como o C# pode ser usado para resolver desafios do dia a dia.
-
+```bash
+git clone https://github.com/MikaelTeixeira/ProjetoEstacionamentoComCSharp
+cd ProjetoEstacionamentoComCSharp
+dotnet run
