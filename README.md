@@ -160,4 +160,47 @@ Componentes principais:
 
 Fluxo geral:
 
+Program.cs
+↓
+CRUDS (menu e escolhas do usuário)
+↓
+Parking ↔ Car (lógica de negócio e dados)
 
+
+---
+
+## Motivação / Por que este projeto?
+
+- Praticar programação orientada a objetos real (classes, modelos, responsabilidades).  
+- Solidificar os fundamentos de C# em um cenário prático.  
+- Entender como funciona um fluxo completo de console (entrada, saída, validação).  
+- Construir uma estrutura limpa e organizada para um problema real e simples.  
+
+---
+
+## Instalação
+
+### Requisitos
+- Windows, Linux ou macOS  
+- .NET SDK instalado  
+- Nenhuma dependência externa  
+
+---
+
+### Rodando o projeto
+
+```bash
+git clone https://github.com/MikaelTeixeira/ProjetoEstacionamentoComCSharp
+cd ProjetoEstacionamentoComCSharp
+dotnet run
+```
+
+## Contribuição
+
+Faça um fork do repositório
+
+Crie uma nova branch
+
+Implemente suas melhorias
+
+Abra um pull request
