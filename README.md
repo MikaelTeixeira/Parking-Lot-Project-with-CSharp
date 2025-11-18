@@ -11,7 +11,7 @@ It registers vehicles, assigns parking spots, calculates fees based on parking t
 
 ## 🌐 Language Index
 - <img src="https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg" width="20" /> **English Version** → (you are here)
-- <img src="https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f7.svg" width="20" /> **Versão em Português** → [README-ptBR.md](README-ptBR.md)
+- <img src="https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f7.svg" width="20" /> [**Versão em Português**](#projeto-de-estacionamento-com-c)
 
 ---
 
@@ -97,22 +97,19 @@ dotnet run
 3. Implement your improvements  
 4. Open a pull request
 
-
-
-# Hotel System com C#
-![Status](https://img.shields.io/badge/status-ativo-brightgreen)
-![Version](https://img.shields.io/badge/versão-0.1-blue)
-![Language](https://img.shields.io/badge/linguagem-C%23-178600)
-![License](https://img.shields.io/badge/licença-nenhuma-lightgrey)
-
-Um sistema de gerenciamento de hotel feito inteiramente em C#.  
-Registra hóspedes, gerencia suítes, cria reservas, calcula custo total da estadia e organiza as operações do hotel usando uma estrutura limpa baseada em orientação a objetos.
-
 ---
+# Projeto de Estacionamento com C#
+![Status](https://img.shields.io/badge/status-ativo-brightgreen)
+![Versão](https://img.shields.io/badge/versão-0.1-blue)
+![Linguagem](https://img.shields.io/badge/linguagem-C%23-178600)
+![Licença](https://img.shields.io/badge/licença-nenhuma-lightgrey)
 
 ## 🌐 Índice de Idiomas
-- 🇺🇸 **English Version** → [README.md](README.md)
-- 🇧🇷 **Versão em Português** → Você está aqui
+- <img src="https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg" width="20" /> [**English Version**](#parking-lot-project-with-c)
+- <img src="https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f7.svg" width="20" /> **Versão em Português** → (você está aqui)
+
+Um sistema simples e funcional de gerenciamento de estacionamento desenvolvido em C#.  
+Ele registra veículos, aloca vagas, calcula o valor com base no tempo estacionado e exibe a disponibilidade das vagas.
 
 ---
 
@@ -130,92 +127,37 @@ Registra hóspedes, gerencia suítes, cria reservas, calcula custo total da esta
 
 ## Descrição
 
-O **Hotel System** é uma aplicação de console em C# projetada para simular operações essenciais de um hotel real.  
-Ele gerencia o registro de hóspedes, cadastro de suítes, criação de reservas, cálculo da estadia e exibe resumos em uma interface totalmente interativa pelo terminal.
+O **Projeto de Estacionamento com C#** é um sistema de console que gerencia entradas e saídas de veículos, cálculo de pagamento e alocação de vagas.
 
-O projeto foi criado como exercício para reforçar conceitos de C#, programação orientada a objetos e lógica backend.
+Este foi o **primeiro projeto completo que desenvolvi usando C#**, criado como um exercício prático para aprender .NET, programação orientada a objetos e lógica backend.
 
 ---
 
 ## Funcionalidades
 
-- Registrar novos hóspedes  
-- Registrar suítes do hotel  
-- Criar reservas vinculando hóspedes e suítes  
-- Calcular o valor total da estadia com base nos dias reservados  
-- Exibir o resumo das reservas  
-- Listar todos os hóspedes  
-- Listar todas as suítes  
-- Sistema totalmente interativo via console  
-- Arquitetura limpa baseada em OOP  
+- Registrar novos veículos  
+- Exibir todas as vagas disponíveis  
+- Alocar um veículo em uma vaga específica  
+- Calcular o valor do estacionamento com base no tempo parado  
+- Remover veículos após o pagamento  
+- Listar todos os veículos atualmente estacionados  
+- Sistema 100% interativo via console  
 
 ---
 
 ## Arquitetura/Design
 
-### **Guest.cs**
-Armazena informações do hóspede como nome e dados de identificação.
+Componentes principais:
 
-### **Suite.cs**
-Contém atributos da suíte como descrição, capacidade e valor da diária.
+- **Car.cs**  
+  Armazena dados do veículo (nome, ano e vaga associada).
 
-### **Reservation.cs**
-Vincula um hóspede a uma suíte, gerencia a quantidade de dias reservados e calcula o valor total.
+- **Parking.cs**  
+  Gerencia alocação de vagas, cálculo do valor e toda a lógica interna de armazenamento.
 
-### **Hotel.cs**
-Gerencia listas globais (suítes, hóspedes) e oferece operações de nível superior.
+- **CRUDS.cs**  
+  Controla o menu do console e todas as interações com o usuário.
 
-### **Program.cs**
-Ponto de entrada da aplicação.  
-Controla menus, entrada de dados e chama a lógica principal das outras classes.
-
----
-
-### Fluxo Geral
-
-Program.cs (Menu & Entrada)
-↓
-Hotel.cs (operações principais)
-↓
-Guest.cs / Suite.cs / Reservation.cs (dados & regras)
+Fluxo geral:
 
 
----
-
-## Motivação / Por que este projeto?
-
-- Praticar conceitos de orientação a objetos em um cenário real  
-- Criar uma aplicação de console estruturada do zero  
-- Entender modelagem lógica envolvendo hóspedes, suítes e reservas  
-- Reforçar fundamentos de C# com uma arquitetura organizada  
-
----
-
-## Instalação
-
-### Requisitos
-- Windows, Linux ou macOS  
-- .NET SDK instalado  
-- Nenhuma dependência externa  
-
----
-
-### Rodando o projeto
-
-```bash
-git clone https://github.com/MikaelTeixeira/Hotel-System
-cd Hotel-System
-dotnet run
-
-```
-
-###Contribuição
-
-Faça um fork do repositório
-
-Crie uma nova branch
-
-Adicione suas melhorias
-
-Abra um pull request
----
